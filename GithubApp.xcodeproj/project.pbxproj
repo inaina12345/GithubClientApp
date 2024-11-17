@@ -16,6 +16,14 @@
 		042FF2592CE9BFDC0035CB71 /* GithubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2582CE9BFDC0035CB71 /* GithubAppTests.swift */; };
 		042FF2632CE9BFDC0035CB71 /* GithubAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2622CE9BFDC0035CB71 /* GithubAppUITests.swift */; };
 		042FF2652CE9BFDC0035CB71 /* GithubAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2642CE9BFDC0035CB71 /* GithubAppUITestsLaunchTests.swift */; };
+		042FF2722CE9BFEF0035CB71 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2712CE9BFEF0035CB71 /* User.swift */; };
+		042FF2752CE9C1A80035CB71 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2742CE9C1A80035CB71 /* API.swift */; };
+		042FF2772CE9C3430035CB71 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2762CE9C3430035CB71 /* ImageDownloader.swift */; };
+		042FF27A2CE9C52F0035CB71 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2792CE9C52F0035CB71 /* UserListViewModel.swift */; };
+		042FF27C2CE9C67A0035CB71 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF27B2CE9C67A0035CB71 /* UserCellViewModel.swift */; };
+		042FF2812CE9CBAB0035CB71 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF2802CE9CBAB0035CB71 /* TimeLineViewController.swift */; };
+		042FF28C2CE9DA410035CB71 /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FF28A2CE9DA410035CB71 /* TimeLineCell.swift */; };
+		042FF28D2CE9DA410035CB71 /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042FF28B2CE9DA410035CB71 /* TimeLineCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		042FF25E2CE9BFDC0035CB71 /* GithubAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042FF2622CE9BFDC0035CB71 /* GithubAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAppUITests.swift; sourceTree = "<group>"; };
 		042FF2642CE9BFDC0035CB71 /* GithubAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		042FF2712CE9BFEF0035CB71 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		042FF2742CE9C1A80035CB71 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		042FF2762CE9C3430035CB71 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		042FF2792CE9C52F0035CB71 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		042FF27B2CE9C67A0035CB71 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		042FF2802CE9CBAB0035CB71 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		042FF28A2CE9DA410035CB71 /* TimeLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		042FF28B2CE9DA410035CB71 /* TimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		042FF2402CE9BFD90035CB71 /* GithubApp */ = {
 			isa = PBXGroup;
 			children = (
+				042FF27D2CE9C9E70035CB71 /* View */,
+				042FF2782CE9C4310035CB71 /* ViewModel */,
+				042FF2732CE9C0880035CB71 /* Model */,
 				042FF2412CE9BFD90035CB71 /* AppDelegate.swift */,
 				042FF2432CE9BFD90035CB71 /* SceneDelegate.swift */,
 				042FF2452CE9BFD90035CB71 /* ViewController.swift */,
@@ -125,6 +144,35 @@
 				042FF2642CE9BFDC0035CB71 /* GithubAppUITestsLaunchTests.swift */,
 			);
 			path = GithubAppUITests;
+			sourceTree = "<group>";
+		};
+		042FF2732CE9C0880035CB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042FF2712CE9BFEF0035CB71 /* User.swift */,
+				042FF2742CE9C1A80035CB71 /* API.swift */,
+				042FF2762CE9C3430035CB71 /* ImageDownloader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042FF2782CE9C4310035CB71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				042FF2792CE9C52F0035CB71 /* UserListViewModel.swift */,
+				042FF27B2CE9C67A0035CB71 /* UserCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042FF27D2CE9C9E70035CB71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042FF2802CE9CBAB0035CB71 /* TimeLineViewController.swift */,
+				042FF28A2CE9DA410035CB71 /* TimeLineCell.swift */,
+				042FF28B2CE9DA410035CB71 /* TimeLineCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042FF28D2CE9DA410035CB71 /* TimeLineCell.xib in Resources */,
 				042FF24B2CE9BFDB0035CB71 /* Assets.xcassets in Resources */,
 				042FF24E2CE9BFDB0035CB71 /* Base in Resources */,
 				042FF2492CE9BFD90035CB71 /* Base in Resources */,
@@ -258,9 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042FF2722CE9BFEF0035CB71 /* User.swift in Sources */,
 				042FF2462CE9BFD90035CB71 /* ViewController.swift in Sources */,
+				042FF27A2CE9C52F0035CB71 /* UserListViewModel.swift in Sources */,
+				042FF2812CE9CBAB0035CB71 /* TimeLineViewController.swift in Sources */,
 				042FF2422CE9BFD90035CB71 /* AppDelegate.swift in Sources */,
 				042FF2442CE9BFD90035CB71 /* SceneDelegate.swift in Sources */,
+				042FF27C2CE9C67A0035CB71 /* UserCellViewModel.swift in Sources */,
+				042FF2772CE9C3430035CB71 /* ImageDownloader.swift in Sources */,
+				042FF28C2CE9DA410035CB71 /* TimeLineCell.swift in Sources */,
+				042FF2752CE9C1A80035CB71 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GithubApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -496,6 +554,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -515,6 +574,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -533,6 +593,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ddd.GithubAppUITests;
@@ -550,6 +611,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7M9P9S3ADX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ddd.GithubAppUITests;

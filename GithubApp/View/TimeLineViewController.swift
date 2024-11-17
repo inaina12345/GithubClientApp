@@ -10,9 +10,9 @@ import UIKit
 import SafariServices
 
 final class TimeLineViewController: UIViewController {
-    fileprivate var viewModel: UserListViewModel!
-    fileprivate var tableView: UITableView!
-    fileprivate var refreshControl: UIRefreshControl!
+    private var viewModel: UserListViewModel!
+    private var tableView: UITableView!
+    private var refreshControl: UIRefreshControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ final class TimeLineViewController: UIViewController {
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(TimeLineCell.self, forCellReuseIdentifier: "TimeLineCell")
+        tableView.register(TimeLineCell.nib, forCellReuseIdentifier: TimeLineCell.identifier)
         view.addSubview(tableView)
 
         // 更新し、UIRefreshControl を設定し、リフレッシュした時に呼ばれるメソッドを設定
@@ -75,7 +75,7 @@ final class TimeLineViewController: UIViewController {
 extension TimeLineViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 45
     }
 
     // viewModel.usersCount() を tableView の Cell の数として設定している
@@ -84,7 +84,7 @@ extension TimeLineViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let timelineCell = tableView.dequeueReusableCell(withIdentifier: "TimeLineCell") as? TimeLineCell {
+        if let timelineCell = tableView.dequeueReusableCell(withIdentifier: TimeLineCell.identifier) as? TimeLineCell {
             //その Cell の UserCellViewModel を取得し、timelineCell に対して、nickName と、icon をセットしている
             let cellViewModel = viewModel.cellViewModels[indexPath.row]
             timelineCell.setNickName(nickName: cellViewModel.nickName)
